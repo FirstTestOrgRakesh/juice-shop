@@ -3,6 +3,7 @@ name: Build
   push:
     branches:
       - main
+      - master
       - feature1
       - feature2
       - feature*
