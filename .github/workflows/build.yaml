@@ -22,7 +22,7 @@ jobs:
       - name: Free memory on the agent
         run: echo "The free memory is  $(free -h)"
       - name: Locale on the agent
-        run: echo locale
+        run: locale
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
