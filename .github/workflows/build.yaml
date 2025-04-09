@@ -24,7 +24,7 @@ jobs:
       - name: set locale
         run: LC_ALL=C.UTF-8 && export LC_ALL
       - name: Locale on the agent
-        run: locale
+        run: locale -a
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
