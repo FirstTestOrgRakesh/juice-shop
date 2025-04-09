@@ -23,6 +23,8 @@ jobs:
         run: echo "The free memory is  $(free -h)"
       - name: set locale
         run: LC_ALL=en_US.utf8 && export LC_ALL
+      - name: set locale1
+        run: LANG=en_US.utf8
       - name: Locale on the agent
         run: locale
       - name: SonarQube Scan
